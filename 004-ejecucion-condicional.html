@@ -1,0 +1,23 @@
+<!Doctype html>
+<html>
+<head>
+
+
+</head>
+<body>
+    <p>Ejecucion Condicional</p>
+<script type="text/javascript">
+
+var cantidadStock = prompt("Ingrese la cantidad de Productos");
+if (cantidadStock <= 5) {
+    alert("Debes conseguir mas stock de productos");
+    cantidadStock = parseInt(cantidadStock)+10;
+} else {
+    alert("Estas bien con el Stock ;-) ");
+};
+
+document.write("El stock Actual es " + cantidadStock);
+</script>
+
+</body>
+</html>
