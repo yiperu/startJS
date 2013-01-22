@@ -1,0 +1,1 @@
+document.write('Este es un mensaje  es desde otro archivo JS con la siguiente instruccion document.write ');
