@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+<head>
+
+
+</head>
+<body>
+    <p>Ejecucion Condicional</p>
+<script type="text/javascript">
+    var descuento = 0;
+    var cantidadProductos = prompt("Ingrese la cantidad de Productos");
+
+    var precioTotal = prompt("Precio Total");
+
+    var pagaEnEfectivo = confirm("¿Ha pagado en efectivo?");
+
+
+    if (cantidadProductos > 10 && precioTotal < 500) {
+        descuento = 10;
+    };
+    if (cantidadProductos > 10 && precioTotal >= 500) {
+        descuento = 15;
+    };
+    if (precioTotal < 10 && !pagaEnEfectivo) {
+        descuento = 2;
+    };
+
+    if ((cantidadProductos >= 500 || precioTotal >= 1000) && (pagaEnEfectivo)) {
+        descuento = descuento + descuento*20/100;
+    };
+
+
+    /*El comando confir en chrome  me funciona como si fuera un simple prompt("");
+    en firefox si funciona como debe ser
+    */
+
+    /*
+Operadores Logicos
+AND  &&
+OR   ||
+NOT   !
+XOR   xor
+
+    */
+</script>
+
+</body>
+</html>
