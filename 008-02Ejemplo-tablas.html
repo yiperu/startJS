@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        var numeroFilas = prompt("Ingrese numero de Filas");
+        numeroFilas = parseInt(numeroFilas);
+    </script>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <script type="text/javascript">
+        for (var i = 0; i < 13; i++) {
+            if (i==0) {
+                document.write("<td>Sucursal</td>");
+            } else {
+                document.write("<td>Mes "+parseInt(i)+"</td>");
+            };
+        };
+        </script>
+    </tr>
+
+    <script type="text/javascript">
+    for (var i = 0; i < numeroFilas; i++) {
+    document.write("<tr>");
+        for (var j = 0; j < 13; j++) {
+            if (j==0) {
+                document.write("<td>Suc. "+parseInt(i+1)+"</td>");
+
+            }else{
+                document.write("<td></td>");
+            };
+
+        };
+
+    document.write("</tr>");
+    };
+    </script>
+
+</table>
+</body>
+</html>

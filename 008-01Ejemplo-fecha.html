@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    Fecha de Nacimiento
+<form id="formulario1" name="formulario1" method="post" action="">
+
+    <select name="dia" id="dia">
+    <script type="text/javascript">
+        for (var i = 0; i < 31; i++) {
+            document.write("<option>"+parseInt(i+1)+"</option>");
+        };
+    </script>
+    </select>
+
+    <select name="mes" id="mes">
+    <script type="text/javascript">
+        for (var i = 0; i < 12; i++) {
+            document.write("<option>"+parseInt(i+1)+"</option>");
+        };
+    </script>
+    </select>
+
+    <select name="anio" id="anio">
+    <script type="text/javascript">
+        for (var i = 0; i < 100; i++) {
+            document.write("<option>"+parseInt(i+1920)+"</option>");
+        };
+    </script>
+    </select>
+</form>
+</body>
+</html>
