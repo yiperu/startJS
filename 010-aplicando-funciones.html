@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documento sin titulo</title>
+    <script type="text/javascript">
+
+    function crearOptions(desde, hasta, selected){
+        for (var i = 0; i < (hasta-desde+1); i++) {
+
+            if (selected != undefined) {
+                if (selected == (desde+i)) {
+                    document.write("<option selected='selected'>"+parseInt(i+desde)+"</option>");
+                } else {
+                    document.write("<option>"+parseInt(i+desde)+"</option>");
+                }
+            } else {
+                document.write("<option>"+parseInt(i+desde)+"</option>");
+            }
+
+        }
+    }
+
+    </script>
+</head>
+<body>
+    Fecha de Nacimiento
+<form id="formulario1" name="formulario1" method="post" action="">
+
+    <select name="dia" id="dia">
+    <script type="text/javascript">
+        crearOptions(1,31);
+    </script>
+    </select>
+
+    <select name="mes" id="mes">
+    <script type="text/javascript">
+        crearOptions(1,12);
+    </script>
+    </select>
+
+    <select name="anio" id="anio">
+    <script type="text/javascript">
+        crearOptions(1960,2020,2012);
+    </script>
+
+    </select>
+</form>
+</body>
+</html>

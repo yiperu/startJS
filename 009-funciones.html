@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <script type="text/javascript">
+    var tipoLetra = "Arial";
+
+    function mostrarMensaje(mensaje, color){
+        var tamanioLetra = 14;
+        if (color=="rojo") {
+            document.write("<p style='color:red' >" +mensaje+"</p>");
+        } else {
+            document.write("<p style='color:blue' >" +mensaje+"</p>");
+        };
+    }
+
+    function calcularDescuento(precio, descuento){
+        var final = precio - (precio*descuento/100);
+        return final;
+    }
+
+    mostrarMensaje("Este es mi mensaje", "rojo");
+    mostrarMensaje("Este es otro mensaje", "negro");
+
+    var precioPagado = calcularDescuento(600,15);
+    document.write(precioPagado);
+
+    </script>
+
+
+
+</body>
+</html>
