@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documento sin titulo</title>
+
+</head>
+<body>
+<p>
+    <script type="text/javascript">
+    var fecha = new Date();
+    var dia = fecha.getDate();
+    var mes = fecha.getMonth();
+    var anio = fecha.getFullYear();
+    var diaSemana = fecha.getDay();
+
+    console.log("Dia: "+fecha.getDate());
+    console.log(mes);
+    console.log(anio);
+    console.log(diaSemana);
+
+    var nombreMes;
+
+    switch(mes){
+        case 1:
+            nombreMes = "Enero";
+            break;
+        case 2:
+            nombreMes = "Febrero";
+            break;
+        case 3:
+            nombreMes = "Marzo";
+            break;
+        case 4:
+            nombreMes = "Abril";
+            break;
+        case 5:
+            nombreMes = "Mayo";
+            break;
+        case 6:
+            nombreMes = "Junio";
+            break;
+        default:
+            nombreMes = "Desconocido";
+    }
+
+    var meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Noviembre","Diciembre"];
+    var diasSemana = ["Domingo","Lunes","Martes","Miercoles","Jueves","Viernes","Sabado"];
+
+    document.write("Hoy es "+diasSemana[diaSemana]+", "+dia+" de "+meses[mes]+" de "+anio);
+
+    </script>
+
+
+</p>
+
+</body>
+</html>

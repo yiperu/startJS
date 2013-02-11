@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Documento sin titulo</title>
+
+</head>
+<body>
+<p>
+    <script type="text/javascript">
+
+      var precios = new Array();
+      do{
+        var precio = prompt("Ingrese un precio");
+        if (precio != "" && precio != undefined){
+            precios.push(precio);
+        }
+      }while(precio != "" && precio != undefined);
+
+      var cantidad = precios.length;
+      var suma = 0;
+      document.write("<h1>Hay "+cantidad+" de precios cargados");
+      // Procesar el vector
+      for (var i = 0; i < cantidad; i++) {
+          suma = suma + parseInt(precios[i]);
+      };
+
+      if (cantidad > 0) {
+        var promedio = suma/cantidad;
+      }else{
+        var promedio = 0;
+      }
+
+    </script>
+
+
+</p>
+<p>
+La Suma es :
+    <script type="text/javascript">
+    document.write(suma);
+    </script>
+</p>
+<p>
+El Promedio es :
+    <script type="text/javascript">
+    document.write(promedio);
+    </script>
+</p>
+</body>
+</html>
