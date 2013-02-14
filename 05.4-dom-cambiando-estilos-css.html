@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+    <script type="text/javascript">
+    function inicializar() {
+        var link = document.getElementById("linkV2B");
+        var caja = document.getElementById("cajaContenido");
+
+        link.href = "http://www.video2brain.com/es"
+
+        caja.style.backgroundColor="yellow";
+        // Ojo que JS no acepta guion en medio, usa notacion Camello
+        caja.style.height="100px";
+        caja.style.border="2px solid black";
+    }
+
+    function cambiarLink () {
+        document.getElementById("linkV2B").href="http://www.google.com";
+    }
+
+    </script>
+
+</head>
+<body onload="inicializar();">
+    <div id="cajaContenido" onmouseover="this.style.backgroundColor='green';" onmouseout="this.style.backgroundColor='white';">
+
+    <A HREF="" id="linkV2B" target="_blank">Link a la Web</A>
+    <input type="button" onclick="cambiarLink();" value="cambiar Link" />
+    </div>
+
+</body>
+</html>

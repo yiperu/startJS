@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+    <script type="text/javascript">
+    function inicializar() {
+        var link = document.getElementById("linkV2B");
+        var caja = document.getElementById("cajaContenido");
+
+        alert("El id del enlace es " + link.id);
+        link.href = "http://www.video2brain.com/es"
+
+        if (link.target == "_blank"){
+            alert("El link se abre en una ventana nueva");
+        }
+
+    }
+
+    function cambiarLink () {
+        document.getElementById("linkV2B").href="http://www.google.com";
+    }
+
+    </script>
+
+</head>
+<body onload="inicializar();">
+    <div id="cajaContenido" >Soy in DIV</div>
+    <A HREF="" id="linkV2B" target="_blank">Link a la Web</A>
+    <input type="button" onclick="cambiarLink();" value="cambiar Link" />
+</body>
+</html>

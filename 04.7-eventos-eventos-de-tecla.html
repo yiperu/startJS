@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+    <script type="text/javascript">
+        function mostrarTecla(event){
+            alert(event.keyCode);
+            //alert(event.charCode);
+            if(event.ctrlKey){
+                alert("Control presionado");
+            }
+            if(event.shiftKey){
+                alert("Shift presionado");
+            }
+            if(event.altKey){
+                alert("Alt presionado");
+            }
+
+        }
+    </script>
+
+</head>
+<body>
+
+    <form id="form1" name="form1" method="post" action="" onsubmit="alert('Formulario enviado')">
+        <div>
+            <label>Nombre Completo</label>
+            <input type="text" nombre="nombre" id="nombre" onkeydown="" onkeyup="mostrarTecla(event)" onkeypress="" />
+        </div>
+        <div>
+            <input type="submit" name="button" id="button" value="Enviar">
+        </div>
+
+    </form>
+
+</body>
+</html>

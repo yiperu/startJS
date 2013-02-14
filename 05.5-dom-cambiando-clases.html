@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+    <script type="text/javascript">
+
+    </script>
+    <style type="text/css">
+        input {
+            border: 1px solid gray;
+            background-color: #CCC;
+            height:20px;
+        }
+        input.enfoco {
+            background-color: #CF6;
+            border:1px solid green;
+        }
+    </style>
+
+</head>
+<body onload="">
+    <label>
+        Nombre: <input type="text" id="txtNombre"  onfocus="this.className='enfoco' " />
+    </label>
+    <label>
+        Apellido: <input type="text" id="txtApellido" />
+    </label>
+</body>
+</html>
