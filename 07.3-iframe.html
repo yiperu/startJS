@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+
+    <script type="text/javascript">
+
+        function recibirMensaje(mensaje){
+            //document.getElementById('mensaje').innerHTML = mensaje;
+            alert(mensaje);
+        }
+
+        function mensajeAiframe(mensaje){
+            document.getElementById('iframe1').innerHTML +=mensaje;
+        }
+
+    </script>
+
+    <style type="text/css">
+
+
+    </style>
+
+</head>
+<body >
+
+<h1>Esta es la ventana principal</h1>
+
+<p>
+    <iframe src="pageiframe.html" width="400" height="500" id="iframe1"></iframe>
+</p>
+<input type="button" onclick="mensajeAiframe('Hola desde tu padre');" value="Mandar mensaje a iframe" />
+
+</body>
+</html>

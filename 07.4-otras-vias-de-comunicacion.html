@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+
+    <script type="text/javascript">
+
+    </script>
+
+    <style type="text/css">
+    #apDiv1 {
+        position: absolute;
+        width: 374;
+        height: 282px;
+        z-index: 1;
+        left: 232px;
+        top: 50px;
+        background-color: red;
+        display: none;
+    }
+
+    </style>
+
+</head>
+<body >
+    <a href="javascript:window.print()">Imprimir</a>
+<br />
+<input type="button" onclick="window.location.href='http://www.video2brain.com/es' " value="V2B" />
+<br />
+    <a href="javascript:history.back()">Back</a>
+<br />
+<input type="button" onclick="document.getElementById('apDiv1').style.display='block' " value="Abrir PopInter" />
+<br />
+<div id="apDiv1">
+    <p>Esto es una ventana</p>
+    <p>&nbsp;</p>
+    <a href="javascript:document.getElementById('apDiv1').style.display='none' ">Cerrar</a>
+</div>
+
+
+</body>
+</html>

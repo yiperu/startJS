@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+
+    <script type="text/javascript">
+        var popup;
+        function abrir(){
+        popup = window.open("popup.html","_blank","width=300, height=400, resizable=no,toolbar=yes, menubar=yes, status=yes, scrollbars=no");
+        }
+        function recibirMensaje(mensaje){
+            document.getElementById('mensaje').innerHTML = mensaje;
+        }
+
+    </script>
+
+    <style type="text/css">
+
+
+    </style>
+
+</head>
+<body >
+
+<input type="button" value="Abrir ventana" onclick="abrir();" />
+
+<p id="mensaje"></p>
+<p><input type="button" value="Mensaje a Popup" onclick="popup.mostrarMensaje('Hola desde tu dueño')" /></p>
+
+</body>
+</html>

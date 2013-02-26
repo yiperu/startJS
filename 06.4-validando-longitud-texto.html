@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>El Objeto This</title>
+
+    <script type="text/javascript" src="form1.js">
+    </script>
+
+    <style type="text/css">
+
+        form {
+            width: 300px;
+            margin: auto;
+        }
+
+        label {
+            width: 200px;
+            display: block;
+            margin: 10px;
+            float: left;
+        }
+        input[type=text], select {
+            width: 200px;
+            float: left;
+        }
+        button {
+            display: block;
+            clear: both;
+            margin-left: 200px;
+        }
+        ul {
+            list-style: none;
+            margin: 0px;
+        }
+        li {
+            margin: 0px;
+            padding: 0px;
+            height: 80px;
+        }
+        .enfoco {
+            background-color: #9F9;
+            border: 1px solid green;
+        }
+        .ayuda {
+            font-size: xx-small;
+            color: green;
+        }
+        input.error {
+            background-color: #FF9;
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+<body >
+<form>
+    <ul>
+        <li>
+            <label for="nombre">Nombre*</label>
+            <input type="text" id="nombre" name="nombre" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this); revisarObligatorio(this); revisarLongitud(this,3)" />
+        </li>
+        <li>
+            <label for="direccion">Direccion*</label>
+            <input type="text" id="direccion" name="direccion" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this); revisarObligatorio(this); revisarLongitud(this,10)" />
+        </li>
+        <li>
+            <label for="edad">Edad</label>
+            <input type="text" id="edad" name="edad" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this);  revisarNumerico(this)" />
+        </li>
+        <li>
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)" />
+        </li>
+        <li>
+            <label for="estadocivil">Estado Civil</label>
+            <select id="estadocivil" name="estadocivil" onfocus="entroEnFoco(this)" onblur="salioDeFoco(this)" >
+                <option>Seleccione</option>
+                <option>Soltero/a</option>
+                <option>Casado/a</option>
+                <option>Viudo/a</option>
+                <option>Divorciado/a</option>
+            </select>
+        </li>
+        <li>
+            <label>
+                <input type="checkbox" value="SI" />
+                Acepto las condiciones</label>
+        </li>
+    </ul>
+</form>
+
+
+</body>
+</html>
